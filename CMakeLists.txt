@@ -4,7 +4,8 @@ project(gboviz VERSION 1.0)
 
 # Set the C++ standard to C++17
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 
 # Add the executable
 add_executable(gboviz src/main.cpp src/simdjson.cpp src/processor.cpp)
